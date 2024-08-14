@@ -1,6 +1,6 @@
 # dependencies
-**/*/node_modules
-**/*/.pnp
+**/*/node_modules/
+**/*/.pnp/
 .pnp.js
 package-lock.json
 
@@ -13,8 +13,8 @@ package-lock.json
 /coverage
 
 # production
-**/*/dist
-**/*/.astro
+**/*/dist/
+**/*/.astro/
 
 # misc
 .DS_Store
