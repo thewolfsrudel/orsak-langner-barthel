@@ -1,0 +1,150 @@
+/* {
+    outline: 1px solid black;
+}*/
+
+button {
+    background-color: #AEC9EC;
+    float: right;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    background-color: white;
+}
+
+header h1 {
+    color: #3072C8;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+header h3{
+    color: #25589B;
+    padding-left: 140px;
+
+}
+
+#servicesOffered {}
+
+div {
+    font-weight: bold;
+}
+
+section#about h3 {
+    text-align: center;
+}
+
+section#about {
+    padding: 10px;
+}
+
+section#servicesOffered h3 {
+    text-align: center;
+}
+
+section#servicesOffered {
+    padding: 10px;
+}
+
+section#values {
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 114, 200);
+}
+
+section#values h3 {
+    text-align: center;
+    padding: 5px;
+}
+
+#professionalism h4 {
+    font-size: medium;
+}
+
+#professionalism {
+    width: 300px;
+    inline-size: 1000px;
+    block-size: 200px;
+    padding: 10px;
+    font-size: 10pt;
+}
+
+#responsiveness h4 {
+    font-size: medium;
+}
+
+#responsiveness {
+    width: 300px;
+    inline-size: 1000px;
+    block-size: 200px;
+    padding: 10px;
+    font-size: 10pt;
+}
+
+#quality h4 {
+    font-size: medium;
+}
+
+#quality {
+    width: 300px;
+    inline-size: 1000px;
+    block-size: 200px;
+    padding: 10px;
+    font-size: 10pt;
+}
+
+.cardsection {
+    display: flex;
+}
+
+section#ourPartners h3 {
+    text-align: center;
+}
+
+#partners {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#partners ul {
+    list-style: none;
+    padding: 0;
+}
+
+#mwo {
+    text-align: center;
+    inline-size: 275px;
+    block-size: 110px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(28, 69, 114);
+    background-color: #DDE8F7;
+}
+
+#jkb {
+    text-align: center;
+    inline-size: 275px;
+    block-size: 110px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(28, 69, 114);
+    background-color: #DDE8F7;
+}
+
+section#contactOurOffice h3 {
+    text-align: center;
+}
+
+section#contactOurOffice ul {
+    list-style: none;
+}
+
+footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(28, 69, 114);
+}
+
+@media (min-width: 50em ) {
+
+}
