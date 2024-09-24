@@ -13,7 +13,7 @@
 		"PORT": "3000"
 	},
 	"forwardPorts": [3000],
-	"postCreateCommand": ["yarn","dev"],
+	"postCreateCommand": "yarn dev",
 	"customizations": {
 		"vscode": {
 			"extensions": [
