@@ -1,3 +1,6 @@
+---
+import Header from "@components/Header.astro";
+---
 <!DOCTYPE html>
 <html>
 
@@ -8,14 +11,7 @@
 </head>
 
 <body>
-    <button><a href="https://orsakcpas.clientportal.com">Portal Login</a></button>
-
-    <header>
-        <img src="/logo.png">
-        <h1>Orsak Langner & Barthel PLLC</h1>
-        <h3>CERTIFIED PUBLIC ACCOUNTANTS</h3>
-    </header>
-
+    <Header/>
     <section id="about">
         <h3>About Orsak Langner & Barthell</h3>
         <p> Orsak Langner & Barthel, PLLC is licensed in TX and specializes in Accounting. We are professional,
@@ -102,7 +98,8 @@
 
     <footer>
         <div id="contact" class="infobox">
-            <h3>Contact</h3>
+            <div id="professionalism" class="infobox">
+                <h3>Contact</h3>
             <ul>
                 <li>520 Post Oak Blvd. Suite #400</li>
                 <li>Houston, TX 77027</li>
@@ -111,7 +108,7 @@
                 <li>Fax: (713) 840 - 8815</li>
                 <li>taxadmin@orsakcpas.com</li>
             </ul>
-        </div>
+            </div>
     </footer>
 </body>
 

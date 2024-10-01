@@ -3,9 +3,43 @@ const portalLink = 'https://orsakcpas.clientportal.com';
 ---
 <header>
 	<div>
-		<img src="" alt="" />
-		<h1>Orsak Langner & Barthel, PLLC</h1>
-		<h2>Certified Public Accounts</h2>
+		<img src="/logo.png">
+		<div id="title">
+			<h1>Orsak Langner & Barthel PLLC</h1>
+			<h3>CERTIFIED PUBLIC ACCOUNTANTS</h3>
+		</div>
 	</div>
-	<a href={portalLink}>Portal Sign In</a>
+	<a href="https://orsakcpas.clientportal.com">Portal Login</a>
 </header>
+<style lang="scss">
+	header {
+		display: flex;
+		justify-content: space-between;
+		padding: 8px 16px;
+		img {
+			width: 100px;
+			height: 100px;
+			float: left;
+		}
+		#title {
+			text-align: right;
+
+		h1 {
+			color: #3072C8;
+		}
+		h3{
+			color: #25589B;
+		}
+	}
+	a {
+		display: inline-block;
+		background-color: #AEC9EC;
+		border-radius: 5px;
+		transition-duration: 0.3s;
+		align-self: center;
+	}
+	a:hover {
+		background-color: white;
+	}
+}
+</style>
