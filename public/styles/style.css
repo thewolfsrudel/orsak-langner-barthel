@@ -1,6 +1,6 @@
 /* {
     outline: 1px solid black;
-}*/
+} */
 
 
 #servicesOffered {}
@@ -25,12 +25,12 @@ section#servicesOffered {
     padding: 10px;
 }
 
-section#values {
+#values {
     color: rgb(255, 255, 255);
     background-color: rgb(48, 114, 200);
 }
 
-section#values h3 {
+#values h3 {
     text-align: center;
     padding: 5px;
 }
@@ -88,6 +88,7 @@ section#ourPartners h3 {
 #partners ul {
     list-style: none;
     padding: 0;
+    margin: 0px;
 }
 
 #mwo {
@@ -116,11 +117,6 @@ section#contactOurOffice h3 {
 
 section#contactOurOffice ul {
     list-style: none;
-}
-
-footer {
-    color: rgb(255, 255, 255);
-    background-color: rgb(28, 69, 114);
 }
 
 @media only screen and (min-width: 50em) {
