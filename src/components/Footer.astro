@@ -30,9 +30,9 @@ const THIS_YEAR = new Date().getFullYear();
 		</div>
 	</section>
 	<section>
-		<p >
-			&copy; {THIS_YEAR} Orsak Langner & Barthel, PLLC | <a>Site Map</a> | <a>Privacy Policy</a> | <a>Disclaimer</a>
-			
+		<p>
+			&copy; {THIS_YEAR} Orsak Langner & Barthel, PLLC | <a>Site Map</a> |
+			<a>Privacy Policy</a> | <a>Disclaimer</a>
 		</p>
 	</section>
 </footer>
@@ -42,11 +42,39 @@ const THIS_YEAR = new Date().getFullYear();
 		color: rgb(255, 255, 255);
 		background-color: rgb(28, 69, 114);
 		padding: 5px;
+		font-size: 12pt;
 		section {
-			display: flex;
-			flex-flow: row nowrap;
-			flex: 1 1 33%;
-			justify-content: space-evenly;
+			p {
+				text-align: center;
+			}
+		}
+	}
+	.infobox {
+		text-align: center;
+		padding: 16px 32px;
+		ul {
+			list-style: none;
+			padding: 0;
+			li {
+				font-weight: normal;
+			}
+		}
+	}
+	@media screen and (min-width: 50em) {
+		footer {
+			padding: 5px;
+			section {
+				display: flex;
+				flex-flow: row nowrap;
+				flex: 1 1 33%;
+				justify-content: space-evenly;
+				p {
+					text-align: center;
+				}
+			}
+		}
+		.infobox {
+			text-align: left;
 		}
 	}
 </style>
