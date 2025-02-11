@@ -5,17 +5,22 @@ import Layout from "@layouts/Default.astro";
 <Layout>
     <section id="about">
         <h3>About Orsak Langner & Barthell</h3>
-        <p> Orsak Langner & Barthel, PLLC is licensed in TX and specializes in Accounting. We are professional,
-            experienced, and affordable. We offer a broad range of services for business owners, executives, and
-            independent
-            professionals.</p>
+        <p>
+            Orsak Langner & Barthel, PLLC is licensed in TX and specializes in
+            Accounting. We are professional, experienced, and affordable. We
+            offer a broad range of services for business owners, executives, and
+            independent professionals.
+        </p>
     </section>
 
     <section id="servicesOffered">
         <h3>Services Offered</h3>
-        <p>If you're looking for a cost-effective solution to managing your finances or feel like it's time you obtained
-            an accurate picture of your financials so that you can make informed decisions about your financial future,
-            we can help.</p>
+        <p>
+            If you're looking for a cost-effective solution to managing your
+            finances or feel like it's time you obtained an accurate picture of
+            your financials so that you can make informed decisions about your
+            financial future, we can help.
+        </p>
         <ul>
             <li>Audits</li>
             <li>Business Accounting</li>
@@ -34,23 +39,28 @@ import Layout from "@layouts/Default.astro";
     <section id="values">
         <h3>Our Values</h3>
         <div class="cardsection">
-            <div id="professionalism" class="infobox">
+            <div class="infobox">
                 <h4>Professionalism</h4>
-                <p>By combining our expertise, experience and the energy of our staff, each client receives close
-                    personal and professional attention.
+                <p>
+                    By combining our expertise, experience and the energy of our
+                    staff, each client receives close personal and professional
+                    attention.
                 </p>
             </div>
-            <div id="responsiveness" class="infobox">
+            <div class="infobox">
                 <h4>Responsiveness</h4>
-                <p>Our firm is responsive. Companies who choose our firm rely on competent advice and fast, accurate
-                    personnel.
+                <p>
+                    Our firm is responsive. Companies who choose our firm rely
+                    on competent advice and fast, accurate personnel.
                 </p>
             </div>
 
-            <div id="quality" class="infobox">
+            <div class="infobox">
                 <h4>Quality</h4>
-                <p>Our firm's reputation reflects the high standards we demand of ourselves. Our primary goal as a
-                    trusted </p>
+                <p>
+                    Our firm's reputation reflects the high standards we demand
+                    of ourselves. Our primary goal as a trusted
+                </p>
             </div>
         </div>
     </section>
@@ -58,14 +68,14 @@ import Layout from "@layouts/Default.astro";
     <section id="ourPartners">
         <h3>Our Partners</h3>
         <div id="partners">
-            <div id="mwo" class="infobox">
+            <div class="partnerbox">
                 <h3>Michael W. Orsak, CPA</h3>
                 <ul>
                     <li>mworsak@orsakcpas.com</li>
                     <li>(713) 621 - 5000 x110</li>
                 </ul>
             </div>
-            <div id="jkb" class="infobox">
+            <div class="partnerbox">
                 <h3>Jerilyn (Jeri) K. Barthel, CPA</h3>
                 <ul>
                     <li>jbarthel@orsakcpas.com</li>
@@ -75,24 +85,70 @@ import Layout from "@layouts/Default.astro";
         </div>
     </section>
 
-   <!-- <section id="contactOurOffice">
-        <h3>Contact Our Office</h3>
-        <ul>
-            <li>520 Post Oak Blvd. Suite #400</li>
-            <li>Houston, TX 77027</li>
-            <li>Hours: 9:00 am - 4:00 pm</li>
-            <li>Phone: (713) 621 - 5000</li>
-            <li>Fax: (713) 840 - 8815</li>
-            <li>taxadmin@orsakcpas.com</li>
-        </ul>
-    </section>
--->
-    <!-- <a>
-        Contact Us
-        Let us know your questions.
-    </a> -->
+    <a> Contact Us Let us know your questions. </a>
 </Layout>
 
-<style>
+<style lang="scss">
+section {
+    h3 {
+        text-align: center;
+        padding: 5px;
+    }
+}
+    section#contactOurOffice ul {
+        list-style: none;
+    }
 
+    #values {
+        color: rgb(255, 255, 255);
+        background-color: rgb(48, 114, 200);
+    }
+
+.infobox {
+    width: 300px;
+    inline-size: 1000px;
+    block-size: 200px;
+    padding: 10px;
+    font-size: 10pt;
+    h4 {
+        font-size: medium;
+    }
+}
+
+    .cardsection {
+        display: flex;
+    }
+
+#partners {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.partnerbox {
+    text-align: center;
+    inline-size: 275px;
+    block-size: 110px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(28, 69, 114);
+    background-color: #dde8f7;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0px;
+    }
+}
+
+    @media screen and (min-width: 50em) {
+        section#about {
+            padding: 16px 128px;
+        }
+        section#servicesOffered {
+            padding: 16px 128px;
+        }
+
+        #values {
+            padding: 16px 128px;
+        }
+    }
 </style>
