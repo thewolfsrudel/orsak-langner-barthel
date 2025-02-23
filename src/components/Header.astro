@@ -4,63 +4,42 @@ const PORTAL_LINK = "https://orsakcpas.clientportal.com";
 
 <header>
 	<div>
-		<img src="favicon.svg" />
-		<div id="title">
-			<h1>Orsak Langner & Barthel PLLC</h1>
-			<h3>CERTIFIED PUBLIC ACCOUNTANTS</h3>
-		</div>
+		<img
+			src="images/logo-title.svg"
+			alt="Orsak Langner & Barthel PLLC Certified Public Accountants"
+		/>
 	</div>
 	<a href={PORTAL_LINK}>Portal Login</a>
 </header>
 
 <style lang="scss">
-header {
-	display: flex;
-	justify-content: space-between;
-	padding: 8px 10px;
-	div {
+	header {
 		display: flex;
-		align-content: center;
-		img {
-			width: 70pt;
-			height: 70pt;
+		justify-content: space-between;
+		padding: 8px 10px;
+		div {
+			display: flex;
+			align-content: center;
+			img {
+				height: 70pt;
+			}
 		}
-		#title {
+		a {
 			display: inline-block;
-			text-align: right;
-			h1 {
-				color: #3072c8;
-			}
-			h3 {
-				color: #25589b;
-			}
+			background-color: #aec9ec;
+			transition-duration: 0.3s;
+			align-self: center;
+			border-radius: 5px;
+		}
+		a:hover {
+			background-color: white;
 		}
 	}
-	a {
-		display: inline-block;
-		background-color: #aec9ec;
-		transition-duration: 0.3s;
-		align-self: center;
-		border-radius: 5px;
-	}
-	a:hover {
-		background-color: white;
-	}
-}
-@media screen and (min-width: 55em) {
-	#title {
-		h1 {
-			font-size: 32pt;
-		}
-		h3 {
-			font-size: 18pt;
+	@media screen and (min-width: 55em) {
+		img {
+			height: 100pt;
+			transition-property: all;
+			transition-duration: 2s;
 		}
 	}
-	img {
-		width: 100pt;
-		height: 100pt;
-		transition-property: all;
-		transition-duration: 2s;
-	}
-}
 </style>
