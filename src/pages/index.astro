@@ -21,18 +21,22 @@ import Layout from "@layouts/Default.astro";
             your financials so that you can make informed decisions about your
             financial future, we can help.
         </p>
-        <ul>
-            <li>Audits</li>
-            <li>Business Accounting</li>
-            <li>Business Taxes</li>
-            <li>Compilations</li>
-            <li>Estates</li>
-            <li>Individual Accounting</li>
-            <li>Individual Taxes</li>
-            <li>Not-for-Profit Accounting</li>
-            <li>Not-for-Profit Taxes</li>
-            <li>Reviews</li>
-            <li>Trusts</li>
+        <ul class="services_list">
+            <div id="list1">
+                <li>Audits</li>
+                <li>Business Accounting</li>
+                <li>Business Taxes</li>
+                <li>Compilations</li>
+                <li>Estates</li>
+                <li>Individual Accounting</li>
+            </div>
+            <div id="list2">
+                <li>Individual Taxes</li>
+                <li>Not-for-Profit Accounting</li>
+                <li>Not-for-Profit Taxes</li>
+                <li>Reviews</li>
+                <li>Trusts</li>
+            </div>
         </ul>
     </section>
 
@@ -89,14 +93,26 @@ import Layout from "@layouts/Default.astro";
 </Layout>
 
 <style lang="scss">
-section {
-    h3 {
-        text-align: center;
-        padding: 5px;
+    section {
+        h3 {
+            text-align: center;
+            padding: 5px;
+        }
     }
-}
-    section#contactOurOffice ul {
-        list-style: none;
+
+    .services_list {
+        list-style: symbols();
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .list1 {
+        margin-right: 100px;
+    }
+
+    .list2 {
+        margin-left: 100px;
     }
 
     #values {
@@ -104,40 +120,40 @@ section {
         background-color: rgb(48, 114, 200);
     }
 
-.infobox {
-    width: 300px;
-    inline-size: 1000px;
-    block-size: 200px;
-    padding: 10px;
-    font-size: 10pt;
-    h4 {
-        font-size: medium;
+    .infobox {
+        width: 300px;
+        inline-size: 1000px;
+        block-size: 200px;
+        padding: 10px;
+        font-size: 10pt;
+        h4 {
+            font-size: medium;
+        }
     }
-}
 
     .cardsection {
         display: flex;
     }
 
-#partners {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.partnerbox {
-    text-align: center;
-    inline-size: 275px;
-    block-size: 110px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid rgb(28, 69, 114);
-    background-color: #dde8f7;
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0px;
+    #partners {
+        display: flex;
+        justify-content: space-evenly;
     }
-}
+
+    .partnerbox {
+        text-align: center;
+        inline-size: 275px;
+        block-size: 110px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid rgb(28, 69, 114);
+        background-color: #dde8f7;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0px;
+        }
+    }
 
     @media screen and (min-width: 50em) {
         section#about {
