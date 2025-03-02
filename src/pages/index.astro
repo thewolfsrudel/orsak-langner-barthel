@@ -1,5 +1,6 @@
 ---
 import Layout from "@layouts/Default.astro";
+import ContactForm from "@components/ContactForm.astro";
 ---
 
 <Layout>
@@ -88,8 +89,9 @@ import Layout from "@layouts/Default.astro";
             </div>
         </div>
     </section>
-
-    <a> Contact Us Let us know your questions. </a>
+    <section id="contactForm">
+        <ContactForm/>
+    </section>
 </Layout>
 
 <style lang="scss">
@@ -98,6 +100,12 @@ import Layout from "@layouts/Default.astro";
             text-align: center;
             padding: 5px;
         }
+    }
+
+    #contactForm {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
     }
 
     .services_list {
@@ -118,6 +126,9 @@ import Layout from "@layouts/Default.astro";
     #values {
         color: rgb(255, 255, 255);
         background-color: rgb(48, 114, 200);
+        h4 {
+            border-bottom: 2px solid white;
+        }
     }
 
     .infobox {
